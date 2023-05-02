@@ -11,6 +11,7 @@
 	<groupId>com.spring</groupId>
 	<artifactId>skaiciuotuvas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<!--Kad paleisti web aplikacija tomcat serveryje reikia "war"-->
 	<packaging>war</packaging>
 	<name>skaiciuotuvas</name>
 	<description>Internetinis skaiciuotuvas naudojant spring boot</description>
@@ -18,16 +19,18 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<!--Biblioteka reikalinga sukurti web aplikacijai (spring boot (pagrindine biblioteka))-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<!--Tomcat serveris web aplikacijai-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		<!--JUnit-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
